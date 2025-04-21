@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Generator and Solver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Maze Generator and Solver</h1>
+        <div class="canvas-container">
+            <canvas id="mazeCanvas" width="800" height="600"></canvas>
+        </div>
+        <div class="controls">
+            <button id="generateButton">Generate Maze</button>
+            <button id="solveButton">Solve Maze</button>
+            <button id="speedButton">Change Speed</button>
+            <div id="statusText">Animation Speed: Medium</div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/maze.js') }}"></script>
+</body>
+</html>
